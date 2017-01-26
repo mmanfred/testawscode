@@ -1,0 +1,21 @@
+version: 0.1
+
+           
+phases:
+  install:
+    commands:
+      - echo hello
+  pre_build:
+    commands:
+      - echo pre-build
+  build:
+    commands:
+      - echo Building
+  post_build:
+    commands:
+      - echo construction complete
+      
+artifacts:
+  files:
+    - readme.md    
+  discard-paths: yes
